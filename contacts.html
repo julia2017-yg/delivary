@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delivary</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="libs/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <img class="header__logo-img" src="img/logo.png" alt="logo">
+        </div>
+        <nav class="header__menu">
+          <div class="burger__menu">
+            <a href="#" class="burger__link"></a>
+          </div>
+          <ul class="list">
+            <li class="item">
+              <a class="active" href="index.html">HOME</a>
+            </li>
+            <li class="item item__second">
+              <a href="about.html">ABOUT</a>
+              <ul class="sub__menu">
+                <li class="sub__menu-item">
+                  <a href="history.html">History</a>
+                </li>
+                <li class="sub__menu-item"><a href="team.html">Team</a></li>
+                <li class="sub__menu-item"><a href="FAQ.html">FAQs</a></li>
+                <li class="sub__menu-item"><a href="template.html">Template settings</a></li>
+                <li class="sub__menu-item"><a href="forum.html">Forum</a></li>
+              </ul>
+            </li>
+            <li class="item"><a href="services.html">SERVICES</a></li>
+            <li class="item"><a href="news.html">NEWS</a></li>
+            <li class="item"><a href="contacts.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="contacts">
+    <div class="container">
+      <h3 class="contacts__title item_title_part2">Contacts</h3>
+      <iframe class="footer__inner-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.262667657075!2d-4.266015983951016!3d55.84075629267227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888468d5b3f424f%3A0x732dce017ee040b!2zU2hlcmlmZiBDb3VydCBIb3VzZSwgODYgVmljdG9yaWEgUmQsIEdsYXNnb3cgRzQyIDdKQiwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sua!4v1599224055083!5m2!1sru!2sua"
+        width="1100" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+
+
+      <div class="contacts__inner">
+        <div class="contacts__inner-item">
+          <h4 class="contacts__inner-title">ADDRESS:</h4>
+          <div class="contacts__info">
+            <div class="contacts__icon"><i class="icons-marker fa fa-home"></i></div>
+            <div class="contacts__description">
+              138 Atlantis Ln
+              Kingsport
+              Illinois121164
+            </div>
+          </div>
+        </div>
+        <div class="contacts__inner-item">
+          <h4 class="contacts__inner-title">PHONES:</h4>
+          <div class="contacts__info">
+            <div class="contacts__icon"><i class="icons-marker fa fa-phone"></i></div>
+            <div class="contacts__description phone"><a href="tel:18005596580">+1 800 559 6580</a></div>
+          </div>
+          <div class="contacts__info">
+            <div class="contacts__icon"><i class="icons-marker fa fa-print"></i></div>
+            <div class="contacts__description phone"><a href="tel:15048899898">+1 504 889 9898</a></div>
+          </div>
+
+        </div>
+        <div class="contacts__inner-item">
+          <h4 class="contacts__inner-title">E-MAIL:</h4>
+          <div class="contacts__info">
+            <div class="contacts__icon"><i class="icons-marker fa fa-envelope"></i></div>
+            <div class="contacts__description mail"><a href="mailto:julka.getman@gmail.com">julka.getman@gmail.com</a></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="contacts__information">
+        <h4 class="contacts__information-title">
+          MISCELLANEOUS INFORMATION:
+        </h4>
+        <p class="contacts__information-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+      <form name='form' onsubmit="return validateForm()" novalidate="novalidate">
+        <div class="form__input input">
+          <div class="form__input-item">
+            <input onblur="validateName(this.value, this)" name="name" type="text"
+            placeholder="Name" required=""
+              data-rules="name" />
+            <span class="error-msg" style='color:red' id='inputName_115'>
+              This field is required.
+            </span>
+          </div>
+          <div class="form__input-item">
+             <input onblur="validateMail(this.value, this)" name="email" type="email"
+              placeholder="Email" required="" data-rules="email">
+             <span class="error-msg" style='color:red' id='inputEmail_115'>
+               This field is required.
+             </span>
+          </div>
+          <div class="form__input-item">
+            <input onblur="validatePhone(this.value, this)" name="phone" type="text"
+              placeholder="Phone" required=""
+              data-rules="phone" />
+
+            <span class="error-msg" style='color:red'>
+              This field is required.
+            </span>
+          </div>
+        </div>
+        <div class="form__input">
+            <textarea name="message"
+              placeholder="Message" data-rules="message"></textarea>
+            <span style="display: none;"> This field is required.</span>
+        </div>
+        <div class="form__buttons">
+          <button type="reset" name="button" id="clear_115" value="Clear">CLEAR</button>
+          <button type="submit" name="button" value="Send" id="send_mess">SEND</button>
+        </div>
+        <div id="popup">
+          <div class="popup-body">
+            <div tabindex="1" onclick="closePopup()" id="close-popup">X</div>
+            <span class="text">Thank you! Your message has been send.</span>
+          </div>
+
+          <div class="opacity"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="footer__copyright">
+    <div class="container">
+      <span class="siteName">Dilivery</span>
+      <span class="copy">©</span>
+      <span class="year">2019</span>
+      <span class="siteName">Privicy Policy</span>
+    </div>
+  </div>
+  <div class="back__top">
+    <a href="#" class="back__top-link">
+      <span></span>
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/validat-form.js"></script>
+  <script src="js/main.js"></script>
+ 
+</body>
+
+</html>
